@@ -1,0 +1,54 @@
+/* PC */
+@media (min-width:992px) {
+    
+}
+/* Tablet & mobile */
+@media (max-width:991.98px) {
+    /* 1.an nav bar */
+    .navbar{
+        display: none;
+    }
+    /* 2 chuyen logo vao center */
+    .header-top{
+        position: relative;
+    }
+    .header__logo{
+        position: absolute;
+        left: 50%;
+        translate: -50% -50%;
+    }
+    /* 3 can lai pos icon menu */
+    .menu-header__icon{
+        position: absolute;
+        top: 38px;
+        left: 26px;
+        color: #fff;
+        width: 24px;
+    }
+    /* 4 overlay */
+    .menu-overlay{
+        position: fixed;
+        background-color: rgb(0, 0,0, 0.3);
+        inset: 0;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+    }
+    /* 5 check if checkbox has clicked to display overlay */
+    #menu-checkbox:checked ~ .menu-overlay{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* Tablet */
+@media (min-width:768px) and (max-width: 991.98px){
+    
+}
+/* mobile */
+@media (max-width:767.98px){
+}
+/* tam an part not relate */
+.hero,.footer,main{
+    display: none;
+}
